@@ -1,0 +1,167 @@
+﻿/* GREEN & GOLD THEME */
+:root { 
+    --brand: #064e3b; 
+    --gold: #d97706; 
+}
+body { 
+    background-color: #f0fdf4; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { 
+    width: 8px; 
+    height: 8px; 
+}
+::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb { 
+    background: #064e3b; 
+    border-radius: 4px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #042f2e; 
+}
+
+/* Badges & Tags */
+.tag { 
+    font-size: 0.7rem; 
+    font-weight: 700; 
+    padding: 2px 8px; 
+    border-radius: 99px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05em; 
+    display: inline-block; 
+}
+.tag-sen { 
+    background: #dcfce7; 
+    color: #166534; 
+    border: 1px solid #86efac; 
+}
+.tag-pp { 
+    background: #fff7ed; 
+    color: #9a3412; 
+    border: 1px solid #fdba74; 
+}
+.tag-hpa { 
+    background: #e0f2fe; 
+    color: #075985; 
+    border: 1px solid #7dd3fc; 
+}
+.tag-lpa { 
+    background: #fef2f2; 
+    color: #991b1b; 
+    border: 1px solid #fecaca; 
+}
+
+/* Diagnostic Colors */
+.diag-org { 
+    background: #fff7ed; 
+    color: #c2410c; 
+    border-left: 4px solid #f97316; 
+} 
+.diag-dis { 
+    background: #fefce8; 
+    color: #a16207; 
+    border-left: 4px solid #eab308; 
+} 
+.diag-def { 
+    background: #fef2f2; 
+    color: #b91c1c; 
+    border-left: 4px solid #ef4444; 
+} 
+.diag-saf { 
+    background: #450a0a; 
+    color: #fecaca; 
+    border-left: 4px solid #991b1b; 
+} 
+.diag-gen { 
+    background: #f0f9ff; 
+    color: #0369a1; 
+    border-left: 4px solid #0ea5e9; 
+} 
+
+/* Strategy Cards */
+.strat-card { 
+    background: white; 
+    border-radius: 6px; 
+    padding: 10px; 
+    border: 1px solid #e2e8f0; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+    font-size: 0.85rem; 
+    color: #334155; 
+    display: flex; 
+    align-items: start; 
+    gap: 8px; 
+}
+.strat-icon { 
+    margin-top: 2px; 
+    flex-shrink: 0; 
+}
+
+/* Heatmap Cells */
+.hm-cell { 
+    transition: all 0.2s; 
+    cursor: pointer; 
+}
+.hm-cell:hover { 
+    transform: scale(1.05); 
+    border: 1px solid #78350f; 
+    z-index: 10; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+}
+
+/* Modal & Layout */
+.modal-backdrop { 
+    background-color: rgba(6, 78, 59, 0.6); 
+    backdrop-filter: blur(4px); 
+}
+tr.cursor-pointer:hover td { 
+    background-color: #ecfdf5; 
+    color: #064e3b; 
+} 
+
+/* Animations */
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+.animate-fade-in { 
+    animation: fadeIn 0.5s ease-out forwards; 
+}
+
+/* AI Styles */
+.ai-gradient { 
+    background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); 
+}
+.ai-result-box h4 { 
+    font-weight: 700; 
+    color: #4c1d95; 
+    margin-top: 1rem; 
+    margin-bottom: 0.5rem; 
+    font-size: 0.9rem; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05em; 
+}
+.ai-result-box ul { 
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    font-size: 0.9rem; 
+    color: #374151; 
+    margin-bottom: 1rem; 
+}
+.ai-result-box li { 
+    margin-bottom: 0.25rem; 
+}
+.ai-result-box p { 
+    margin-bottom: 0.5rem; 
+    font-size: 0.9rem; 
+    color: #374151; 
+}
